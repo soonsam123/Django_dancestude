@@ -1,0 +1,44 @@
+{% extends 'inicial/base2.html' %}
+{% block body %}
+
+    <!-- Evento Section -->
+
+    <section id="download" >
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 mx-auto">
+                  <br><br><br><br>
+                  <img src="{{ evento.cartaz.url }}" class="img-thumbnail">
+                  <br><br>
+                  <ul class="list-inline banner-social-buttons">
+                      <li class="list-inline-item">
+                          <a href="{{ evento.tickets }}" class="btn btn-default btn-lg">
+                          <i class="fa fa-ticket fa-fw"></i>
+                          <span class="network-name">Tickets</span></a>
+                      </li>
+                      <br><br>
+                      <li class="list-inline-item">
+                          <a href="{{ evento.evento_face }}" class="btn btn-default btn-lg">
+                          <i class="fa fa-facebook fa-fw"></i>
+                          <span class="network-name">Evento no Facebook</span></a>
+                      </li>
+                      <br><br>
+                      <li class="list-inline-item">
+                          <a href="{{ evento.fotos }}" class="btn btn-default btn-lg">
+                          <i class="fa fa-picture-o fa-fw"></i>
+                          <span class="network-name">Fotos</span></a>
+                      </li>
+                  </ul>
+              </div>
+            <div class="col-lg-8 mx-auto">
+                <br><br><br><br>
+                <h1>{{ evento.nome }}</h1>
+                <h4>{{ evento.data }}</h4><br>
+                {{ evento.descricao|linebreaksbr }}
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+{% endblock %}

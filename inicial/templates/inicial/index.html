@@ -1,0 +1,105 @@
+{% extends 'inicial/base.html' %}
+{% block head %}
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+{% block body %}
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">DANCESTUDE</h1>
+              <p class="intro-text">Os melhores eventos de dança estão aqui.
+                <br>Venha se divertir na dança.</p>
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>SOBRE A DANCESTUDE</h2>
+            <p>A Dancestude atua no ambiente da dança promovendo a seus clientes eventos, projetos, grupos de estudo.
+                Venha dividir conosco essa energia!</p>
+              <p>Nós ja temos representantes no Rio de Janeiro, Brasília, Goiânia e Anápolis.</p>
+            <p>Venha fazer parte dessa família!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eventos Section -->
+    <section id="download" class="download-section content-section text-center">
+      <div class="container">
+        <div class="col-lg-8 mx-auto">
+          <h2>PARTICIPE DE NOSSOS EVENTOS</h2>
+          <p>Você pode conferir todos os nossos próximos eventos nacionais e internacionais.</p>
+          <a href="{% url 'eventos:index' %}" class="btn btn-default btn-lg">Visite a Página de eventos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>CONTATO DA DANCESTUDE</h2>
+            <p>Junte-se a nossa comunidade</p>
+            <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/dancestude/" class="btn btn-default btn-lg">
+                  <i class="fa fa-facebook fa-fw"></i>
+                  <span class="network-name">Facebook</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.youtube.com/channel/UCdW2-bsQM6E_1toat33DyxA" class="btn btn-default btn-lg">
+                  <i class="fa fa-youtube fa-fw"></i>
+                  <span class="network-name">Youtube</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/dancestude/?hl=pt-br" class="btn btn-default btn-lg">
+                  <i class="fa fa-instagram fa-fw"></i>
+                  <span class="network-name">Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aba de Parceiros -->
+    <section id="parceiros" class="content-section text-center">
+      <div class="container">
+      <h2>FILIADOS</h2>
+      <div class="row">
+      {% for parceiro in todos_parceiros %}
+          <div class="col-lg-4 mx-auto">
+                  <a href="{{ parceiro.link }}">
+                      <img src="{{ parceiro.logo.url }}" class="ratio img-responsive img-circle" width="200" height="200">
+                  </a>
+              <br><br>
+                  <!-- Se quiser adicionar o nome e o local embaixo da logo
+                  de cada parceiro tire o comentário daqui
+                  <h3>{{ parceiro.nome }}</h3>
+                  <h5>{{ parceiro.local }}</h5>-->
+          </div>
+            {% endfor %}
+        </div>
+      </div>
+    </section>
+
+{% endblock %}
+

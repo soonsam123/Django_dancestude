@@ -1,0 +1,30 @@
+{% extends 'inicial/base2.html' %}
+{% block body %}
+
+    <!-- Evento Section -->
+
+    <section id="download" >
+      <div class="container">
+        <div class="col-lg-12 mx-auto">
+        <br><br><br><br>
+          {% for evento in todos_eventos %}
+              <a href="{% url 'eventos:detail' evento.id %}">
+                        <img src="{{evento.cartaz.url}}" class="img-thumbnail">
+                    </a>
+              <h2>{{ evento.nome }}</h2>
+                        <h4>{{ evento.data }}</h4>
+                        <a href="{% url 'eventos:detail' evento.id %}" class="btn btn-group-xs btn-info" role="button">
+                            <h4>Mais Informações</h4>
+                        </a>
+              <br><br><br><br>
+              {% endfor %}
+        </div>
+      </div>
+    </section>
+
+
+{% endblock %}
+
+
+
+
