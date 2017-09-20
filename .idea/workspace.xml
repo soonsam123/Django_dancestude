@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80a69d90-72c7-48c4-beb9-a53bb9757633" name="Default" comment="" />
+    <list default="true" id="80a69d90-72c7-48c4-beb9-a53bb9757633" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inicial/templates/inicial/base.html" afterPath="$PROJECT_DIR$/inicial/templates/inicial/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inicial/templates/inicial/base2.html" afterPath="$PROJECT_DIR$/inicial/templates/inicial/base2.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,11 +14,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dancestude/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2832">
               <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/inicial/templates/inicial/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1539">
+              <caret line="79" column="30" lean-forward="true" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inicial/templates/inicial/base2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="55" column="97" lean-forward="true" selection-start-line="55" selection-start-column="97" selection-end-line="55" selection-end-column="105" />
               <folding />
             </state>
           </provider>
@@ -59,7 +82,6 @@
         <option value="$PROJECT_DIR$/eventos/views.py" />
         <option value="$PROJECT_DIR$/eventos/urls.py" />
         <option value="$PROJECT_DIR$/eventos/models.py" />
-        <option value="$PROJECT_DIR$/inicial/templates/inicial/base.html" />
         <option value="$PROJECT_DIR$/parceiros/admin.py" />
         <option value="$PROJECT_DIR$/parceiros/models.py" />
         <option value="$PROJECT_DIR$/parceiros/urls.py" />
@@ -74,9 +96,10 @@
         <option value="$PROJECT_DIR$/inicial/static/css/style.css" />
         <option value="$PROJECT_DIR$/eventos/templates/eventos/index.html" />
         <option value="$PROJECT_DIR$/eventos/templates/eventos/detail.html" />
-        <option value="$PROJECT_DIR$/inicial/templates/inicial/base2.html" />
         <option value="$PROJECT_DIR$/inicial/templates/inicial/index.html" />
         <option value="$PROJECT_DIR$/dancestude/settings.py" />
+        <option value="$PROJECT_DIR$/inicial/templates/inicial/base2.html" />
+        <option value="$PROJECT_DIR$/inicial/templates/inicial/base.html" />
       </list>
     </option>
   </component>
@@ -118,6 +141,24 @@
               <item name="Django_dancestude" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django_dancestude" type="462c0819:PsiDirectoryNode" />
               <item name="dancestude" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_dancestude" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_dancestude" type="462c0819:PsiDirectoryNode" />
+              <item name="inicial" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_dancestude" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_dancestude" type="462c0819:PsiDirectoryNode" />
+              <item name="inicial" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_dancestude" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_dancestude" type="462c0819:PsiDirectoryNode" />
+              <item name="inicial" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="inicial" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -504,20 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inicial/templates/inicial/base2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="70" column="40" lean-forward="false" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inicial/templates/inicial/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1716">
-          <caret line="71" column="12" lean-forward="false" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inicial/templates/inicial/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -539,6 +566,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2832">
           <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inicial/templates/inicial/base2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="55" column="97" lean-forward="true" selection-start-line="55" selection-start-column="97" selection-end-line="55" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inicial/templates/inicial/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="79" column="30" lean-forward="true" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
           <folding />
         </state>
       </provider>
